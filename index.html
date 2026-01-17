@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0f14" />
+
+    <title>Your Company Name | Mobile Detailing</title>
+    <meta
+      name="description"
+      content="Professional mobile detailing in your city. Interior detailing, hand wash & wax, ceramic coating, paint correction, and more."
+    />
+
+    <!-- Fonts (close to the bold/condensed look in the video) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Background glow like the video -->
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <!-- Header / Nav -->
+    <header class="site-header" id="top">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Home">
+          <img class="brand-logo" src="assets/logo.png" alt="Company logo" onerror="this.style.display='none'" />
+          <span class="brand-text">
+            <span class="brand-title">YOUR COMPANY</span>
+            <span class="brand-sub">MOBILE DETAILING</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#mobile">MOBILE DETAILING</a></li>
+          <li><a href="#ceramic">CERAMIC COATING</a></li>
+          <li><a href="#paint">PAINT CORRECTION</a></li>
+          <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+
+        <a class="nav-cta" href="#contact">BOOK NOW</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-bg" role="img" aria-label="Car detailing hero image"></div>
+
+        <div class="hero-content">
+          <p class="hero-kicker">⭐ A Name Experience • Fully Mobile • Licensed & Insured</p>
+
+          <h1 class="hero-title">
+            PROFESSIONAL MOBILE DETAILING
+            <span class="hero-title-accent">IN (YOUR CITY)</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            We bring the detail shop to you — delivering premium results, convenient scheduling, and paint-corrected shine.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">BOOK NOW</a>
+            <a class="btn btn-ghost" href="#services">OUR SERVICES</a>
+          </div>
+
+          <div class="hero-proof">
+            <div class="stars" aria-label="Five star rating">
+              ★★★★★
+            </div>
+            <a class="hero-phone" href="tel:+10000000000">(000) 000-0000</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section about" id="mobile">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-image">
+              <img src="assets/about.jpg" alt="Detailing wheel cleaning" />
+            </div>
+
+            <div class="about-card">
+              <h2 class="section-title">
+                ABOUT <span class="accent">YOUR COMPANY</span>
+              </h2>
+
+              <p class="muted">
+                EVOLVE BUSINESS SUMMARY and more detailed paragraph here. Add what makes you different:
+                premium products, careful process, reliable scheduling, and professional results.
+              </p>
+
+              <div class="stats">
+                <div class="stat">
+                  <div class="stat-number">8+</div>
+                  <div class="stat-label">Years</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-number">850+</div>
+                  <div class="stat-label">Details</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-number">200+</div>
+                  <div class="stat-label">Reviews</div>
+                </div>
+              </div>
+
+              <div class="about-actions">
+                <a class="btn btn-primary" href="#contact">BOOK NOW</a>
+                <a class="btn btn-ghost" href="#services">OUR SERVICES</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services (2 cards like the video) -->
+      <section class="section services" id="services">
+        <div class="container">
+          <h2 class="section-title center">
+            OUR SPECIALIZED <span class="accent">MOBILE DETAILING</span> SERVICES
+          </h2>
+          <p class="center muted maxw">
+            Choose premium protection, correction, and detailing services designed for real-world durability and a showroom finish.
+          </p>
+
+          <div class="service-cards">
+            <article class="service-card" id="ceramic">
+              <div class="service-media">
+                <img src="assets/service-ceramic.jpg" alt="Ceramic coating service" />
+              </div>
+              <div class="service-body">
+                <h3>CERAMIC COATING</h3>
+                <p class="muted">
+                  Long-term protection with deep gloss, hydrophobic performance, and easier maintenance.
+                </p>
+                <a class="btn btn-primary btn-block" href="#contact">LEARN MORE</a>
+              </div>
+            </article>
+
+            <article class="service-card" id="paint">
+              <div class="service-media">
+                <img src="assets/service-correction.jpg" alt="Paint correction service" />
+              </div>
+              <div class="service-body">
+                <h3>PAINT CORRECTION</h3>
+                <p class="muted">
+                  Remove swirls and defects to restore clarity, gloss, and a clean reflective finish.
+                </p>
+                <a class="btn btn-primary btn-block" href="#contact">LEARN MORE</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline Section (vertical line + alternating layout like the video) -->
+      <section class="section timeline">
+        <div class="container">
+          <h2 class="section-title center">
+            OUR MOST <span class="accent">POPULAR DETAILING</span> SERVICES
+          </h2>
+          <p class="center muted maxw">
+            Built around a consistent process — careful prep, professional tools, and high-end products for premium results.
+          </p>
+
+          <div class="timeline-wrap" role="list">
+            <!-- Item 1 (text left, image right) -->
+            <div class="tl-item" role="listitem">
+              <div class="tl-side tl-text">
+                <h3>FULL INTERIOR <span class="accent">DETAIL</span></h3>
+                <p class="muted">
+                  Deep interior cleaning to refresh and restore: surfaces, crevices, and high-touch areas.
+                </p>
+                <ul class="bullets">
+                  <li>Vacuum + blowout</li>
+                  <li>Steam cleaning + wipe down</li>
+                  <li>Door jambs + plastics</li>
+                  <li>Final inspection + finish</li>
+                </ul>
+                <div class="tl-actions">
+                  <a class="btn btn-primary" href="#contact">BOOK NOW</a>
+                  <a class="btn btn-ghost" href="#contact">LEARN MORE</a>
+                </div>
+              </div>
+
+              <div class="tl-line" aria-hidden="true">
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+
+              <div class="tl-side tl-image">
+                <img src="assets/timeline-interior.jpg" alt="Interior detailing" />
+              </div>
+            </div>
+
+            <!-- Item 2 (image left, text right) -->
+            <div class="tl-item flip" role="listitem">
+              <div class="tl-side tl-image">
+                <img src="assets/timeline-wash.jpg" alt="Hand wash and wax" />
+              </div>
+
+              <div class="tl-line" aria-hidden="true">
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+
+              <div class="tl-side tl-text">
+                <h3>HAND WASH &amp; <span class="accent">WAX</span></h3>
+                <p class="muted">
+                  A safe wash method + quality wax for gloss and short-term protection.
+                </p>
+                <ul class="bullets">
+                  <li>Safe wash (two-bucket)</li>
+                  <li>Wheel + tire clean</li>
+                  <li>Wax for added shine</li>
+                  <li>Final wipe + glass</li>
+                </ul>
+                <div class="tl-actions">
+                  <a class="btn btn-primary" href="#contact">BOOK NOW</a>
+                  <a class="btn btn-ghost" href="#contact">LEARN MORE</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="tl-item" role="listitem">
+              <div class="tl-side tl-text">
+                <h3>COMPLETE <span class="accent">DETAIL</span></h3>
+                <p class="muted">
+                  A balanced package combining interior refresh + exterior enhancement.
+                </p>
+                <ul class="bullets">
+                  <li>Full interior steam &amp; shampoo</li>
+                  <li>Exterior wash + machine wax</li>
+                  <li>Tire dressing &amp; shine</li>
+                  <li>Final inspection + touchups</li>
+                </ul>
+                <div class="tl-actions">
+                  <a class="btn btn-primary" href="#contact">BOOK NOW</a>
+                  <a class="btn btn-ghost" href="#contact">LEARN MORE</a>
+                </div>
+              </div>
+
+              <div class="tl-line" aria-hidden="true">
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+
+              <div class="tl-side tl-image">
+                <img src="assets/timeline-complete.jpg" alt="Complete detail service" />
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="tl-item flip" role="listitem">
+              <div class="tl-side tl-image">
+                <img src="assets/timeline-ceramic.jpg" alt="Ceramic coating service" />
+              </div>
+
+              <div class="tl-line" aria-hidden="true">
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+
+              <div class="tl-side tl-text">
+                <h3>CERAMIC <span class="accent">COATING</span></h3>
+                <p class="muted">
+                  Premium protection with insane gloss, easy cleaning, and durability.
+                </p>
+                <ul class="bullets">
+                  <li>Enhanced gloss + depth</li>
+                  <li>Hydrophobic performance</li>
+                  <li>Better resistance (road grime)</li>
+                  <li>UV &amp; chemical resistance</li>
+                </ul>
+                <div class="tl-actions">
+                  <a class="btn btn-primary" href="#contact">BOOK NOW</a>
+                  <a class="btn btn-ghost" href="#contact">LEARN MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section class="section process">
+        <div class="container">
+          <h2 class="section-title center">
+            OUR MOBILE DETAILING <span class="accent">PROCESS</span>
+          </h2>
+
+          <div class="process-grid">
+            <div class="process-card">
+              <div class="icon">✋</div>
+              <h3>WE DETAIL YOUR VEHICLE</h3>
+              <p class="muted">
+                We arrive prepared and handle the service with a consistent, high-quality process.
+              </p>
+            </div>
+
+            <div class="process-card">
+              <div class="icon">📅</div>
+              <h3>BOOK YOUR APPOINTMENT</h3>
+              <p class="muted">
+                Submit your info and we’ll confirm the best day/time based on your location and needs.
+              </p>
+            </div>
+
+            <div class="process-card">
+              <div class="icon">⭐</div>
+              <h3>ENJOY THE SHINE</h3>
+              <p class="muted">
+                Drive with confidence — clean, protected, and refreshed like it should be.
+              </p>
+            </div>
+          </div>
+
+          <div class="center" style="margin-top: 18px;">
+            <a class="btn btn-primary" href="#contact">BOOK NOW</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section testimonials">
+        <div class="container">
+          <h2 class="section-title center">
+            WHAT OUR <span class="accent">CUSTOMERS</span> SAY
+          </h2>
+          <p class="center muted maxw">
+            Replace these with real reviews. Keep them short like the video.
+          </p>
+
+          <div class="review-row">
+            <article class="review">
+              <p class="review-text">
+                “Amazing work — my car looked brand new. Super professional and on time.”
+              </p>
+              <div class="review-meta">
+                <span class="review-badge">G</span>
+                <span class="review-name">Google Review</span>
+              </div>
+            </article>
+
+            <article class="review">
+              <p class="review-text">
+                “The interior detail was insane. Every crevice cleaned and it smelled fresh.”
+              </p>
+              <div class="review-meta">
+                <span class="review-badge">G</span>
+                <span class="review-name">Google Review</span>
+              </div>
+            </article>
+
+            <article class="review">
+              <p class="review-text">
+                “Booked mobile service and it was so convenient. Results were showroom clean.”
+              </p>
+              <div class="review-meta">
+                <span class="review-badge">G</span>
+                <span class="review-name">Google Review</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="cta-bar">
+            <h3>SCHEDULE AN APPOINTMENT WITH US</h3>
+            <a class="btn btn-primary" href="#contact">BOOK NOW</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / Footer area like the video -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-left">
+              <h2 class="city-state">CITY, STATE</h2>
+              <p class="muted">
+                EVOLVE this paragraph: your service radius, what you specialize in, and how fast you can schedule.
+              </p>
+
+              <ul class="contact-list">
+                <li><span class="cl-ico">📍</span> Address line (optional)</li>
+                <li><span class="cl-ico">📞</span> <a href="tel:+10000000000">(000) 000-0000</a></li>
+                <li><span class="cl-ico">✉️</span> <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></li>
+                <li><span class="cl-ico">🕒</span> Mon–Sat • 9am–6pm</li>
+              </ul>
+            </div>
+
+            <div class="contact-right">
+              <div class="form-card">
+                <h3 class="form-title">SERVICES INTERESTED IN</h3>
+
+                <form id="leadForm" class="form" novalidate>
+                  <div class="form-row">
+                    <label>
+                      <span>NAME</span>
+                      <input name="name" type="text" placeholder="Your name" required />
+                    </label>
+                    <label>
+                      <span>EMAIL</span>
+                      <input name="email" type="email" placeholder="you@email.com" required />
+                    </label>
+                  </div>
+
+                  <div class="form-row">
+                    <label>
+                      <span>PHONE NUMBER</span>
+                      <input name="phone" type="tel" placeholder="(000) 000-0000" required />
+                    </label>
+                    <label>
+                      <span>SERVICE</span>
+                      <select name="service" required>
+                        <option value="" selected disabled>Select a service</option>
+                        <option>Full Interior Detail</option>
+                        <option>Hand Wash & Wax</option>
+                        <option>Complete Detail</option>
+                        <option>Ceramic Coating</option>
+                        <option>Paint Correction</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <label>
+                    <span>MESSAGE</span>
+                    <textarea
+                      name="message"
+                      rows="5"
+                      placeholder="Tell us your vehicle, location, and preferred day/time..."
+                      required
+                    ></textarea>
+                  </label>
+
+                  <button class="btn btn-primary btn-block" type="submit" id="submitBtn">
+                    SUBMIT REQUEST
+                  </button>
+
+                  <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <p>© <span id="year"></span> Your Company Name • All Rights Reserved</p>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

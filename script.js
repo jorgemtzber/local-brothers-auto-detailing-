@@ -12,7 +12,6 @@
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
 
-    // close menu on click
     links.querySelectorAll("a").forEach((a) => {
       a.addEventListener("click", () => {
         links.classList.remove("open");
@@ -38,7 +37,6 @@
 
       const data = Object.fromEntries(new FormData(form).entries());
 
-      // basic validation
       if (!data.name || !data.email || !data.phone || !data.service || !data.message) {
         setStatus("Please fill out all fields.", false);
         return;
@@ -55,10 +53,7 @@
         });
 
         const json = await res.json().catch(() => ({}));
-
-        if (!res.ok) {
-          throw new Error(json?.error || "Failed to send.");
-        }
+        if (!res.ok) throw new Error(json?.error || "Failed to send.");
 
         form.reset();
         setStatus("Submitted! We’ll reach out shortly. ✅");

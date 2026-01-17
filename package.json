@@ -1,0 +1,9 @@
+{
+  "name": "detailing-template",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static detailing template + Vercel contact form API",
+  "dependencies": {
+    "resend": "^4.0.0"
+  }
+}

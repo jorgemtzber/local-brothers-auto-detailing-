@@ -19,14 +19,14 @@ module.exports = async (req, res) => {
       return res.status(500).json({ error: "Missing CONTACT_TO_EMAIL env var" });
     }
 
-    const subject = `[Website Lead] ${service} — ${name}`;
+    const subject = `[Local Brothers Website] ${service} — ${name}`;
     const html = `
       <div style="font-family:Arial,sans-serif;line-height:1.45">
-        <h2>New Website Lead</h2>
+        <h2>New Website Request</h2>
         <p><strong>Name:</strong> ${escapeHtml(name)}</p>
         <p><strong>Email:</strong> ${escapeHtml(email)}</p>
         <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
-        <p><strong>Service:</strong> ${escapeHtml(service)}</p>
+        <p><strong>Package:</strong> ${escapeHtml(service)}</p>
         <p><strong>Message:</strong><br/>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>
       </div>
     `;

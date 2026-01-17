@@ -1,8 +1,8 @@
 {
-  "name": "detailing-template",
+  "name": "local-brothers-template",
   "private": true,
   "version": "1.0.0",
-  "description": "Static detailing template + Vercel contact form API",
+  "description": "Local Brothers Auto Detailing template + Vercel contact form API",
   "dependencies": {
     "resend": "^4.0.0"
   }

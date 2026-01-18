@@ -81,8 +81,6 @@
 
           <div class="hero-proof">
             <div class="stars" aria-label="Five star rating">★★★★★</div>
-
-            <!-- If your real number is 469, change here + in the contact section below -->
             <a class="hero-phone" href="tel:+14602078693">(460) 207-8693</a>
           </div>
         </div>
@@ -131,7 +129,7 @@
         </div>
       </section>
 
-      <!-- Packages (3 cards) -->
+      <!-- Packages -->
       <section class="section services" id="packages">
         <div class="container">
           <h2 class="section-title center">
@@ -232,7 +230,7 @@
         </div>
       </section>
 
-      <!-- Timeline-style section (same visual vibe, now your “What You Get”) -->
+      <!-- What you get (timeline vibe) -->
       <section class="section timeline">
         <div class="container">
           <h2 class="section-title center">
@@ -256,8 +254,7 @@
               </div>
 
               <div class="tl-line" aria-hidden="true">
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span>
               </div>
 
               <div class="tl-side tl-image">
@@ -271,8 +268,7 @@
               </div>
 
               <div class="tl-line" aria-hidden="true">
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span>
               </div>
 
               <div class="tl-side tl-text">
@@ -300,8 +296,7 @@
               </div>
 
               <div class="tl-line" aria-hidden="true">
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span>
               </div>
 
               <div class="tl-side tl-image">
@@ -324,7 +319,7 @@
               <div class="icon">📝</div>
               <h3>SUBMIT A REQUEST</h3>
               <p class="muted">
-                Tell us your vehicle type, package, location, and preferred day/time.
+                Choose a package, vehicle size, add-ons, and preferred time.
               </p>
             </div>
 
@@ -332,7 +327,7 @@
               <div class="icon">📅</div>
               <h3>WE CONFIRM SCHEDULING</h3>
               <p class="muted">
-                We’ll reach out to confirm the appointment details and any prep instructions.
+                We confirm scope, routing, and any condition-based adjustments before starting.
               </p>
             </div>
 
@@ -400,7 +395,7 @@
         </div>
       </section>
 
-      <!-- Contact -->
+      <!-- Contact / Booking Intake -->
       <section class="section contact" id="contact">
         <div class="container">
           <div class="contact-grid">
@@ -414,13 +409,23 @@
 
               <ul class="contact-list">
                 <li><span class="cl-ico">📍</span> The Woodlands, TX (service area)</li>
-
-                <!-- If your real number is 469, change here + in the hero section above -->
                 <li><span class="cl-ico">📞</span> <a href="tel:+14602078693">(460) 207-8693</a></li>
-
                 <li><span class="cl-ico">✉️</span> <a href="mailto:info@localbrothersautodetailing.com">info@localbrothersautodetailing.com</a></li>
                 <li><span class="cl-ico">🕒</span> Mon–Sat • 9am–6pm</li>
               </ul>
+
+              <div class="policy-box">
+                <div class="policy-title">Booking Policies (Quick)</div>
+                <ul class="policy-list">
+                  <li>Packages only — no custom bundles or “quick jobs.”</li>
+                  <li>Vehicle category is confirmed on arrival; mis-selected size is corrected before work begins.</li>
+                  <li>Same-day is not guaranteed (routing + quality standards).</li>
+                  <li>If condition exceeds scope (pet hair/stains/debris), we confirm an add-on/upgrade before starting.</li>
+                  <li>Weather may require rescheduling exterior work to protect results.</li>
+                  <li>Payment collected after completion. No IOUs or partial payments.</li>
+                  <li>We reserve the right to decline requests outside scope/safety standards.</li>
+                </ul>
+              </div>
             </div>
 
             <div class="contact-right">
@@ -428,6 +433,7 @@
                 <h3 class="form-title">REQUEST A DETAIL</h3>
 
                 <form id="leadForm" class="form" novalidate>
+                  <!-- Contact -->
                   <div class="form-row">
                     <label>
                       <span>NAME</span>
@@ -446,22 +452,173 @@
                     </label>
                     <label>
                       <span>PACKAGE</span>
-                      <select name="service" required>
+                      <select name="package" required>
                         <option value="" selected disabled>Select a package</option>
-                        <option>Exterior Precision Wash ($70 Sedan/Coupe • $80 Larger)</option>
-                        <option>Interior Reset Detail ($80 Sedan/Coupe • $100 Larger)</option>
-                        <option>Full Package ($120 Sedan/Coupe • $150 Larger)</option>
+                        <option value="Exterior Precision Wash ($70 Sedan/Coupe • $80 Larger)">
+                          Exterior Precision Wash ($70 Sedan/Coupe • $80 Larger)
+                        </option>
+                        <option value="Interior Reset Detail ($80 Sedan/Coupe • $100 Larger)">
+                          Interior Reset Detail ($80 Sedan/Coupe • $100 Larger)
+                        </option>
+                        <option value="Full Package ($120 Sedan/Coupe • $150 Larger)">
+                          Full Package ($120 Sedan/Coupe • $150 Larger)
+                        </option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <!-- Allowed booking inputs -->
+                  <div class="form-row">
+                    <label>
+                      <span>VEHICLE SIZE</span>
+                      <select name="vehicleSize" required>
+                        <option value="" selected disabled>Select vehicle size</option>
+                        <option value="Sedan/Coupe">Sedan/Coupe</option>
+                        <option value="SUV/Crossover">SUV/Crossover</option>
+                        <option value="Truck/Large SUV">Truck/Large SUV</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      <span>NUMBER OF VEHICLES (SAME ADDRESS)</span>
+                      <select name="vehicleCount" required>
+                        <option value="" selected disabled>Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
                       </select>
                     </label>
                   </div>
 
                   <label>
-                    <span>MESSAGE</span>
-                    <textarea
-                      name="message"
-                      rows="5"
-                      placeholder="Vehicle type (Sedan/Coupe or SUV/Truck), location, and preferred day/time..."
+                    <span>SERVICE ADDRESS (ONE LOCATION)</span>
+                    <input
+                      name="address"
+                      type="text"
+                      placeholder="Street address, The Woodlands, TX"
                       required
+                    />
+                  </label>
+
+                  <div class="form-row">
+                    <label>
+                      <span>PREFERRED DATE</span>
+                      <input name="preferredDate" type="date" required />
+                    </label>
+
+                    <label>
+                      <span>PREFERRED TIME WINDOW</span>
+                      <select name="timeWindow" required>
+                        <option value="" selected disabled>Select</option>
+                        <option value="Morning (9am–12pm)">Morning (9am–12pm)</option>
+                        <option value="Midday (12pm–3pm)">Midday (12pm–3pm)</option>
+                        <option value="Afternoon (3pm–6pm)">Afternoon (3pm–6pm)</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <label class="checkline">
+                    <input type="checkbox" name="sameDayRequest" />
+                    <span>Same-day request (not guaranteed; routing + quality standards apply)</span>
+                  </label>
+
+                  <!-- Add-ons -->
+                  <div class="form-section-title">ADD-ONS (UPGRADE YOUR DETAIL)</div>
+                  <div class="checkbox-grid">
+                    <label class="checkline">
+                      <input type="checkbox" name="addons" value="Ceramic Protection Upgrade (6–12 Months) — Starting at $149 Sedan | $199 SUV/Truck" />
+                      <span>Ceramic Protection Upgrade (6–12 Months) — Starting at <strong>$149</strong> Sedan | <strong>$199</strong> SUV/Truck</span>
+                    </label>
+
+                    <label class="checkline">
+                      <input type="checkbox" name="addons" value="One-Step Paint Enhancement (Gloss Boost Polish) — Starting at $199 Sedan | $269 SUV/Truck" />
+                      <span>One-Step Paint Enhancement (Gloss Boost Polish) — Starting at <strong>$199</strong> Sedan | <strong>$269</strong> SUV/Truck</span>
+                    </label>
+
+                    <label class="checkline">
+                      <input type="checkbox" name="addons" value="Paint Decontamination (Iron Remover + Clay) — Starting at $79 Sedan | $99 SUV/Truck" />
+                      <span>Paint Decontamination (Iron Remover + Clay) — Starting at <strong>$79</strong> Sedan | <strong>$99</strong> SUV/Truck</span>
+                    </label>
+
+                    <label class="checkline">
+                      <input type="checkbox" name="addons" value="Glass Hydrophobic Coating (Windshield + Front Glass) — Starting at $39 Sedan | $49 SUV/Truck" />
+                      <span>Glass Hydrophobic Coating (Windshield + Front Glass) — Starting at <strong>$39</strong> Sedan | <strong>$49</strong> SUV/Truck</span>
+                    </label>
+
+                    <label class="checkline">
+                      <input type="checkbox" name="addons" value="Engine Bay Detail (Safe, Low-Moisture) — Starting at $49 Sedan | $69 SUV/Truck" />
+                      <span>Engine Bay Detail (Safe, Low-Moisture) — Starting at <strong>$49</strong> Sedan | <strong>$69</strong> SUV/Truck</span>
+                    </label>
+
+                    <label class="checkline">
+                      <input type="checkbox" name="addons" value="Odor Reset Treatment (Enzyme + Ozone) — Starting at $79 Sedan | $99 SUV/Truck" />
+                      <span>Odor Reset Treatment (Enzyme + Ozone) — Starting at <strong>$79</strong> Sedan | <strong>$99</strong> SUV/Truck</span>
+                    </label>
+
+                    <label class="checkline">
+                      <input type="checkbox" name="addons" value="Headlight Restoration + UV Seal — $79 (Pair)" />
+                      <span>Headlight Restoration + UV Seal — <strong>$79</strong> (Pair)</span>
+                    </label>
+                  </div>
+
+                  <div class="form-row">
+                    <label>
+                      <span>PET HAIR REMOVAL (LEVEL-BASED)</span>
+                      <select name="petHairLevel">
+                        <option value="" selected>None</option>
+                        <option value="Light — Starting at $35">Light — Starting at $35</option>
+                        <option value="Moderate — Starting at $75">Moderate — Starting at $75</option>
+                        <option value="Heavy — Starting at $150+">Heavy — Starting at $150+</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      <span>WHEEL RUST &amp; FALLOUT REMOVAL (ACID DECON)</span>
+                      <select name="wheelRustLevel">
+                        <option value="" selected>None</option>
+                        <option value="Light — Starting at $25">Light — Starting at $25</option>
+                        <option value="Heavy — Starting at $50">Heavy — Starting at $50</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <div class="note-box">
+                    <div class="note-title">Wheel Rust Results Guarantee</div>
+                    <div class="note-text">
+                      We guarantee a major visible improvement and in most cases remove almost all rust staining.
+                      If the wheel has heavy corrosion/pitting or severe neglected buildup, some marks may remain —
+                      we’ll show you the condition beforehand and only charge if there’s a clear improvement.
+                    </div>
+                  </div>
+
+                  <!-- Condition flags -->
+                  <div class="form-section-title">CONDITION CHECK (TO AVOID SURPRISES)</div>
+                  <div class="checkbox-grid">
+                    <label class="checkline">
+                      <input type="checkbox" name="conditionFlags" value="Heavy pet hair" />
+                      <span>Heavy pet hair</span>
+                    </label>
+                    <label class="checkline">
+                      <input type="checkbox" name="conditionFlags" value="Deep stains" />
+                      <span>Deep stains</span>
+                    </label>
+                    <label class="checkline">
+                      <input type="checkbox" name="conditionFlags" value="Excessive debris" />
+                      <span>Excessive debris</span>
+                    </label>
+                    <label class="checkline">
+                      <input type="checkbox" name="conditionFlags" value="Mold / biohazard concern" />
+                      <span>Mold / biohazard concern</span>
+                    </label>
+                  </div>
+
+                  <label>
+                    <span>NOTES (OPTIONAL)</span>
+                    <textarea
+                      name="notes"
+                      rows="5"
+                      placeholder="Gate code, parking notes, or anything you want us to know (packages only; no custom requests)."
                     ></textarea>
                   </label>
 
